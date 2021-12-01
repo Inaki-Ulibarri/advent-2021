@@ -4,7 +4,7 @@
 int main()
 {
 	int arr[10] = {97, 90, 62, 93, 56, 71,
-			    	89, 73, 62, 85};
+			89, 73, 62, 85};
 	size_t count = 0;
 			    	
 	printf("%d: first element\n", arr[0]);
@@ -20,7 +20,7 @@ int main()
 		}
 	}
 
-	printf("-------\n"
+	printf( "-------\n"
 			"%ld increments\n", count);
 
 	return (0);

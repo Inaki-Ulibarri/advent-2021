@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
 int main()
 {
 	//file handling shenanigans
@@ -29,10 +27,10 @@ int main()
 		colum[i].ones = 0;
 		colum[i].zero = 0;
 	}
+
 	fseek(f, 0, SEEK_SET);
-	char ch;
-	size_t leng = 0;
-	
+
+	char ch = 0;
 	while(1){
 		for(size_t i = 0;  i < foo+1; i++){
 			ch = getc(f);
@@ -44,7 +42,6 @@ int main()
 					colum[i].zero++;
 					break;
 				case'\n':
-					leng++;
 					break;
 				default:
 					break;
